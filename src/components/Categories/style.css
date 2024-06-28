@@ -1,0 +1,307 @@
+
+/* categories */
+.categories {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.category {
+    text-align: center;
+    padding: 3rem;
+    border: 1px solid var(--colo-white-2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.category:hover {
+    background-color: var(--colo-primary);
+}
+
+.category_icon {
+    width: 3.5rem;
+    height: auto;
+}
+.section_category_p {
+    border-left: 1.4rem solid var(--colo-primary);
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--colo-primary);
+    font-size: 1.3rem;
+}
+
+.section_header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.section_header_left {
+    display: flex;
+    align-items: center;
+}
+
+.section_title {
+    margin-right: 78px;
+    font-size: 3.6rem;
+}
+
+.countdown-container {
+    display: flex;
+    gap: 16px;
+}
+
+.countdown-section {
+    text-align: center;
+}
+
+.countdown-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+}
+
+.countdown-value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.separator {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e07575;
+    margin: 0 10px;
+    line-height: 1;
+    /* Align vertically with the numbers */
+}
+@media only screen and (max-width: 1070px) {
+    .header_container {
+        flex-direction: column;
+    }
+
+    .header_filter {
+        display: none;
+    }
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger>svg {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .top_nav {
+        display: none;
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    .nav_items {
+        display: none;
+    }
+
+    .mobile_nav {
+        padding: 14px;
+    }
+
+    .nav_input {
+        width: 100%;
+    }
+
+    .user-actions {
+        margin: 10px 0;
+        justify-content: space-evenly;
+    }
+
+    .auth-actions {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .nav_form {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .slide-item-des,
+    .slide-item-label {
+        font-size: 18px;
+    }
+
+    .slide-item-heading {
+        font-size: 26px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .slide-item img {
+        width: 200px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 46px;
+        height: 46px;
+    }
+
+    .section_title {
+        font-size: 2.6rem;
+        margin-right: 40px;
+    }
+
+    .countdown-container {
+        gap: 2px;
+    }
+
+    .countdown-value {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .gallery {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide-item {
+        height: 200px;
+        justify-content: space-between;
+    }
+
+    .slide-item img {
+        width: 148px;
+    }
+
+    .slide-item-des,
+    .slide-item-label {
+        font-size: 12px;
+    }
+
+    .slide-item-heading {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .section_header {
+        flex-wrap: wrap;
+    }
+
+    .swiper-button-wrap {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        margin: 35px auto;
+        margin-bottom: 0;
+    }
+
+    .swiper-button-next2,
+    .swiper-button-prev2,
+    .swiper-button-next3,
+    .swiper-button-prev3 {
+        width: 30px;
+        height: 30px;
+        background-color: #dedede;
+        position: relative;
+    }
+
+    .swiper-button-next.mobile,
+    .swiper-button-prev.mobile {
+        display: none;
+    }
+
+    .swiper-button-prev>svg,
+    .swiper-button-next>svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .card_top {
+        height: fit-content;
+    }
+
+    .card_img {
+        object-fit: contain;
+    }
+
+    .card_body {
+        margin-top: 1rem;
+        text-align: left;
+        padding: 0px 4px;
+        padding-bottom: 6px;
+    }
+
+    .card_stars svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .add_to_cart svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .trending_title {
+        font-size: 30px;
+    }
+
+    .footer_container {
+        padding-left: 18px;
+        padding-right: 20px;
+    }
+
+    .section_title {
+        font-size: 1.6rem;
+        margin-right: 20px;
+    }
+
+    .countdown-container {
+        gap: 0px;
+    }
+
+    .countdown-value {
+        font-size: 14px;
+    }
+
+    .countdown-label {
+        font-size: 12px;
+    }
+
+    .separator {
+        font-size: 16px;
+        font-weight: bold;
+        color: #e07575;
+        margin: 0 6px;
+        line-height: 1;
+    }
+
+    .footer_logo {
+        font-size: 18px;
+    }
+
+    .footer_container {
+        gap: 14px;
+    }
+
+    .footer_item_titl {
+        font-size: 16px;
+    }
+}

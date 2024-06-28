@@ -1,0 +1,462 @@
+/* navbaar */
+.nav {
+    width: 100%;
+    height: 8rem;
+    /* border-bottom: 1px solid var(--colo-dark-2); */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.nav_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_list {
+    display: flex;
+}
+
+.nav_items {
+    display: flex;
+}
+
+.nav_logo {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--colo-dark-1);
+}
+.icon-logOut {
+    display: flex;
+    cursor: pointer;
+}
+.icon-logOut svg {
+    width: 30px;
+    height: 30px;
+}
+.nav_item {
+    margin: 0rem 0.9rem !important;
+}
+
+.nav_link {
+    padding: 0.6rem;
+    color: var(--colo-dark-1);
+}
+
+.nav_form {
+    margin-right: 24px;
+    padding: 0.8rem;
+    background-color: var(--colo-white-1);
+    display: flex;
+    align-items: center;
+    border: 1px solid #dbdfe3;
+    border-radius: 6px;
+    width: 208px;
+}
+
+.nav_input {
+    padding: 0.4rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.auth-actions {
+    /* display: none; */
+    display: flex;
+    gap: 14px;
+}
+
+.user-actions {
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    gap: 16px;
+}
+
+.user-actions-liked {
+    margin-left: 24px;
+}
+
+.button-4 {
+    appearance: none;
+    background-color: #fafbfc64;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+        rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 10px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+.button-4:hover {
+    background-color: #f3f4f6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+    background-color: #fafbfc;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959da5;
+    cursor: default;
+}
+
+.button-4:active {
+    background-color: #edeff2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+}
+
+.button-4:focus {
+    outline: 1px transparent;
+}
+
+.button-4:before {
+    display: none;
+}
+
+.button-4:-webkit-details-marker {
+    display: none;
+}
+
+.btn-login {
+    appearance: none;
+    background-color: #0f7ce8e0;
+
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+        rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 10px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+.nav_search {
+    cursor: pointer;
+    width: 18px;
+}
+
+.nav_items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav_heart {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.nav_cart {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+/* header */
+.header_container {
+    width: 100%;
+    display: flex;
+    margin-top: 4rem;
+}
+
+.header_filter {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header_filter_link {
+    color: var(--colo-dark-1);
+}
+
+@media only screen and (max-width: 1070px) {
+    .header_container {
+        flex-direction: column;
+    }
+
+    .header_filter {
+        display: none;
+    }
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger>svg {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .top_nav {
+        display: none;
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    .nav_items {
+        display: none;
+    }
+
+    .mobile_nav {
+        padding: 14px;
+    }
+
+    .nav_input {
+        width: 100%;
+    }
+
+    .user-actions {
+        margin: 10px 0;
+        justify-content: space-evenly;
+    }
+
+    .auth-actions {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .nav_form {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .slide-item-des,
+    .slide-item-label {
+        font-size: 18px;
+    }
+
+    .slide-item-heading {
+        font-size: 26px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .slide-item img {
+        width: 200px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 46px;
+        height: 46px;
+    }
+
+    .section_title {
+        font-size: 2.6rem;
+        margin-right: 40px;
+    }
+
+    .countdown-container {
+        gap: 2px;
+    }
+
+    .countdown-value {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .gallery {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: row !important;
+    }
+    .slide-item {
+        height: 200px;
+        justify-content: space-between;
+    }
+
+    .slide-item img {
+        width: 148px;
+    }
+
+    .slide-item-des,
+    .slide-item-label {
+        font-size: 12px;
+    }
+
+    .slide-item-heading {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .section_header {
+        flex-wrap: wrap;
+    }
+
+    .swiper-button-wrap {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        margin: 35px auto;
+        margin-bottom: 0;
+    }
+
+    .swiper-button-next2,
+    .swiper-button-prev2,
+    .swiper-button-next3,
+    .swiper-button-prev3 {
+        width: 30px;
+        height: 30px;
+        background-color: #dedede;
+        position: relative;
+    }
+
+    .swiper-button-next.mobile,
+    .swiper-button-prev.mobile {
+        display: none;
+    }
+
+    .swiper-button-prev>svg,
+    .swiper-button-next>svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .card_top {
+        height: fit-content;
+    }
+
+    .card_img {
+        object-fit: contain;
+    }
+
+    .card_body {
+        margin-top: 1rem;
+        text-align: left;
+        padding: 0px 4px;
+        padding-bottom: 6px;
+    }
+
+    .card_stars svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .add_to_cart svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .trending_title {
+        font-size: 30px;
+    }
+
+    .footer_container {
+        padding-left: 18px;
+        padding-right: 20px;
+    }
+
+    .section_title {
+        font-size: 1.6rem;
+        margin-right: 20px;
+    }
+
+    .countdown-container {
+        gap: 0px;
+    }
+
+    .countdown-value {
+        font-size: 14px;
+    }
+
+    .countdown-label {
+        font-size: 12px;
+    }
+
+    .separator {
+        font-size: 16px;
+        font-weight: bold;
+        color: #e07575;
+        margin: 0 6px;
+        line-height: 1;
+    }
+
+    .footer_logo {
+        font-size: 18px;
+    }
+
+    .footer_container {
+        gap: 14px;
+    }
+
+    .footer_item_titl {
+        font-size: 16px;
+    }
+}
+
+/* mobile nav */
+.mobile_nav {
+    background-color: var(--colo-white-1);
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    border-right: 1px solid var(--colo-dark-2);
+    transition: all 0.5s ease;
+}
+
+.mobile_nav_item {
+    padding: 2rem 10rem 2rem 5rem;
+    border-bottom: 1px solid var(--colo-white-2);
+}
+
+.mobile_nav_link {
+    color: var(--colo-dark-1);
+    padding: 1.2rem 5rem 1.2rem 0rem;
+}
+
+.mobile_nav_hide {
+    display: none;
+}
